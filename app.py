@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pickle
 import nltk
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 import re
 from nltk.corpus import stopwords
