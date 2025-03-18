@@ -2,14 +2,12 @@ import streamlit as st
 import numpy as np
 import pickle
 import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 import re
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-# Download NLTK resources
-nltk.download('punkt')
-nltk.download('stopwords')
 
 # Load pre-trained model and TF-IDF vectorizer
 with open('./Models/spam_classifier.pkl', 'rb') as model_file:
